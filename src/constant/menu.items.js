@@ -1,6 +1,6 @@
 const MENU_ITEMS = [
     {
-        name: "About Me",
+        name: "My CV",
         path: "/",
     },
     {

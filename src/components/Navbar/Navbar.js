@@ -23,7 +23,7 @@ function Navbar() {
                             onClick={closeMobileMenu}
                         >
                             <FaCodeBranch className='navbar-icon' />
-                            MyProfile
+                            NhanDo
                         </Link>
                         <div className='menu-icon' onClick={handleClick}>
                             {click ? <FaTimes /> : <FaBars />}
