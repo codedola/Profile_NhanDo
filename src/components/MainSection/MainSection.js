@@ -34,13 +34,13 @@ export default function MainSection({
                         <div className='col'>
                             <div className='home__main-text-wrapper'>
                                 <div className='top-line'>{topLine}</div>
-                                <h1
+                                <h3
                                     className={
                                         lightText ? "heading" : "heading dark"
                                     }
                                 >
                                     {headline}
-                                </h1>
+                                </h3>
                                 <p
                                     className={
                                         lightTextDesc

@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import { MdFingerprint } from "react-icons/md";
-import { FaBars, FaTimes, FaCodeBranch, FaUserEdit } from "react-icons/fa";
+import { FaBars, FaTimes, FaCodeBranch } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import MENU_ITEMS from "../../constant/menu.items";
 import NavMenuItem from "./Navbar.Item";

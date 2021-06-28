@@ -2,8 +2,8 @@ export const homeObjOne = {
     lightBg: false,
     lightText: false,
     lightTextDesc: false,
-    topLine: "Exclusive Access",
-    headline: "Unlimited Transactions with zero fees",
+    topLine: "",
+    headline: "Internship/Fresher Front-end Developer",
     description:
         "Get access to our exclusive diamond card that allows you to  send unlimited transactions without getting charged any fees",
     buttonLabel: "Download CV",
