@@ -1,77 +1,31 @@
-:root {
-  --primary: #fff;
-}
 
-.btn {
+
+
+.btn-grad {
+  /* background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%) */
+  background-image: linear-gradient(to right, #1A2980 0%, #26b4b2  51%, #1A2980  100%)
+  /* background-image: linear-gradient(to right, #16222A 0%, #3A6073  51%, #16222A  100%) */
+  /* background-image: linear-gradient(to right, #085078 0%, #7ac7be  51%, #085078  100%) */
+}
+.btn-grad {
+  
   padding: 8px 20px;
-  border-radius: 22px;
-  outline: none;
-  border: none;
+  text-align: center;
+  /* text-transform: uppercase; */
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+  border-radius: 8px;
+  display: block;
+  border: unset;
   cursor: pointer;
-  white-space: nowrap;
-  
 }
 
-.btn--primary {
-  background-color: var(--primary);
-  color: #242424;
-  border: 1px solid var(--primary);
-}
-
-.btn--outline {
-  background-color: transparent;
+.btn-grad:hover {
+  background-position: right center;
   color: #fff;
-  padding: 8px 20px;
-  border: 1px solid var(--primary);
-  transition: all 0.3s ease-out;
-}
-
-.btn--medium {
-  padding: 8px 20px;
-  font-size: 18px;
-}
-
-.btn--large {
-  padding: 12px 26px;
-  font-size: 20px;
-}
-
-.btn--large:hover,
-.btn--medium:hover {
-  transition: all 0.3s ease-out;
-  /* background: #fff; */
-  /* color: #333333; */
-}
-
-.btn-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-decoration: none;
-  padding: 8px 16px;
-  height: 100%;
-  width: 100%;
-}
-
-.primary {
-  background-color: #4e65d4;
-  background-image: linear-gradient(43deg, #546adb 0%, #d361cb 46%, #ffb834 100%);
-  color: #fff;
-  border: none;
-  
-}
-.primary:hover {
-  background-color: #4e65d4;
-  background-image: linear-gradient(43deg, #7f8fdd 0%, #dd6dd6 46%, #FFCC70 100%);
 }
 
 
-.green {
-  background: #25ce4a;
-  color: #fff;
-  border: none;
-}
-
-.green:hover {
-  background-color: #242424;
-}

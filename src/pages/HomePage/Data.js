@@ -5,51 +5,24 @@ export const homeObjOne = {
     topLine: "",
     headline: "Internship/Fresher Front-end Developer",
     description:
-        "Get access to our exclusive diamond card that allows you to  send unlimited transactions without getting charged any fees",
+        "My name is Do Vu Thanh Nhan. I'm the type of person who likes to learn and work. I'm passionate about weird things like the javascript language.",
     buttonLabel: "Download CV",
     imgStart: "",
     img: "/images/dovuthanhnhan.jpg",
     alt: "Credit Card",
 };
 
-export const homeObjTwo = {
+/// Project Meme
+export const MemeApp = {
     lightBg: false,
     lightText: false,
     lightTextDesc: false,
-    topLine: "100% SECURE",
-    headline: "Stay protected 24/7 anywhere anytime",
-    description:
-        "We have you covered no matter where you are located. Over 140 locations worldwide to ensure you have access anytime",
-    buttonLabel: "Learn More",
-    imgStart: "",
-    img: "/images/svg-5.svg",
-    alt: "Vault",
-};
-
-export const homeObjThree = {
-    lightBg: false,
-    lightText: false,
-    lightTextDesc: false,
-    topLine: "EASY SETUP",
-    headline: "Super fast and simple onboarding process",
-    description:
-        "Get everything set up and ready in under 10 minutes. All you need to do is add your information and you're ready to go.",
-    buttonLabel: "Start Now",
-    imgStart: "start",
-    img: "/images/svg-7.svg",
-    alt: "Vault",
-};
-
-export const homeObjFour = {
-    lightBg: false,
-    lightText: false,
-    lightTextDesc: false,
-    topLine: "DATA ANALYTICS",
-    headline: "Every transaction is stored on our secure cloud database",
-    description:
-        "Never ever have to worry again about saved reciepts. We store your data, so you can access it anytime.",
-    buttonLabel: "Sign Up Now",
-    imgStart: "start",
-    img: "/images/svg-8.svg",
-    alt: "Vault",
+    headline: "Meme App",
+    description: [
+        "Using reactjs, redux, react-redux, react-router, react-bootstrap, react hook form, ...",
+        "Functions: show posts, add/delete/edit/hide posts, register, login, change password, change profile, review image, active/deactive (admin), search posts, ....",
+    ],
+    buttonLabel: "Link Github",
+    imgStart: false,
+    urlGit: "https://github.com/codedola/new_meme_v2.0",
 };

@@ -3,10 +3,7 @@ const MENU_ITEMS = [
         name: "My CV",
         path: "/",
     },
-    {
-        name: "Skills",
-        path: "/",
-    },
+
     {
         name: "Projects",
         path: "/",

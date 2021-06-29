@@ -2,7 +2,8 @@ import React from "react";
 import "./MyIno.css";
 import { Button } from "../Button/Button";
 import { Link } from "react-router-dom";
-import { FaGithub, FaFacebook, FaYoutube } from "react-icons/fa";
+import { FaGithub, FaFacebook, FaYoutube, FaDownload } from "react-icons/fa";
+
 export default function MyInfo({
     lightBg,
     lightText,
@@ -51,20 +52,14 @@ export default function MyInfo({
                             <div className='mycv'>
                                 <Link to='/' className='mycv-en'>
                                     <p>English</p>
-                                    <Button
-                                        buttonSize='btn--medium'
-                                        buttonColor='primary'
-                                    >
-                                        {buttonLabel}
+                                    <Button buttonStyle='btn-grad'>
+                                        <FaDownload /> {buttonLabel}
                                     </Button>
                                 </Link>
                                 <Link to='/' className='mycv-vi'>
                                     <p className='language-en'>Vietnamese</p>
-                                    <Button
-                                        buttonSize='btn--medium'
-                                        buttonColor='primary'
-                                    >
-                                        {buttonLabel}
+                                    <Button buttonStyle='btn-grad'>
+                                        <FaDownload /> {buttonLabel}
                                     </Button>
                                 </Link>
                             </div>

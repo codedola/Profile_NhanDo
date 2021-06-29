@@ -1,34 +1,24 @@
 import React from "react";
 import "./Button.css";
-
-const STYLES = ["btn--primary", "btn--outline"];
-
-const SIZES = ["btn--medium", "btn--large"];
-
-const COLOR = ["primary", "green"];
+const STYLES = ["btn-grad"];
 
 export const Button = ({
     children,
     type,
     onClick,
     buttonStyle,
-    buttonSize,
-    buttonColor,
+    Icons,
     ...restProps
 }) => {
     const checkButtonStyle = STYLES.includes(buttonStyle)
         ? buttonStyle
         : STYLES[0];
 
-    const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
-
-    const checkButtonColor = COLOR.includes(buttonColor) ? buttonColor : null;
-
-    const btnClassName = `btn ${checkButtonStyle} ${checkButtonSize} ${checkButtonColor}`;
+    const btnClassName = `${checkButtonStyle}`;
 
     return (
         <button className={btnClassName.trim()} onClick={onClick} type={type}>
-            {children}
+            {Icons ? <Icons /> : null} {children}
         </button>
     );
 };

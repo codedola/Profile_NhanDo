@@ -1,19 +1,16 @@
 import React from "react";
 import "./MainSection.css";
 import { Button } from "../Button/Button";
-import { Link } from "react-router-dom";
-
+import ReactPlayer from "react-player";
 export default function MainSection({
     lightBg,
-    topLine,
     lightText,
     lightTextDesc,
     headline,
     description,
     buttonLabel,
-    img,
-    alt,
     imgStart,
+    urlGit,
 }) {
     return (
         <>
@@ -33,7 +30,6 @@ export default function MainSection({
                     >
                         <div className='col'>
                             <div className='home__main-text-wrapper'>
-                                <div className='top-line'>{topLine}</div>
                                 <h3
                                     className={
                                         lightText ? "heading" : "heading dark"
@@ -41,31 +37,36 @@ export default function MainSection({
                                 >
                                     {headline}
                                 </h3>
-                                <p
-                                    className={
-                                        lightTextDesc
-                                            ? "home__main-subtitle"
-                                            : "home__main-subtitle dark"
-                                    }
+                                {description.map(function (desc) {
+                                    return (
+                                        <p
+                                            className={
+                                                lightTextDesc
+                                                    ? "home__main-subtitle"
+                                                    : "home__main-subtitle dark"
+                                            }
+                                        >
+                                            {desc}
+                                        </p>
+                                    );
+                                })}
+
+                                <a
+                                    href={urlGit}
+                                    target='_blank'
+                                    aria-label='Instagram'
+                                    rel='noreferrer'
                                 >
-                                    {description}
-                                </p>
-                                <Link to='/sign-up'>
-                                    <Button
-                                        buttonSize='btn--medium'
-                                        buttonColor='primary'
-                                    >
-                                        {buttonLabel}
-                                    </Button>
-                                </Link>
+                                    <Button>{buttonLabel}</Button>
+                                </a>
                             </div>
                         </div>
                         <div className='col'>
                             <div className='home__main-img-wrapper'>
-                                <img
-                                    src={img}
-                                    alt={alt}
-                                    className='home__main-img'
+                                <ReactPlayer
+                                    url='https://www.youtube.com/watch?v=1X8fkHKEXpo'
+                                    controls={true}
+                                    className='home__main-video'
                                 />
                             </div>
                         </div>
