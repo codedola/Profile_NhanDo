@@ -8,7 +8,7 @@ import {
     FaYoutube,
     FaTwitter,
     FaLinkedin,
-    FaCodeBranch,
+    FaBookReader,
 } from "react-icons/fa";
 
 function Footer() {
@@ -39,8 +39,7 @@ function Footer() {
                 <div className='social-media-wrap'>
                     <div className='footer-logo'>
                         <Link to='/' className='social-logo'>
-                            <FaCodeBranch className='navbar-icon' />
-                            NhanDo
+                            <FaBookReader className='navbar-icon' />
                         </Link>
                     </div>
                     <small className='website-rights'>Contact with me</small>

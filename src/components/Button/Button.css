@@ -36,23 +36,11 @@
   font-size: 20px;
 }
 
-
-.btn--wide {
-  padding: 12px 64px;
-  font-size: 20px;
-}
-
 .btn--large:hover,
 .btn--medium:hover {
   transition: all 0.3s ease-out;
-  background: #fff;
-  color: #242424;
-}
-
-.btn--wide:hover {
-  color: #fff;
-  background-color: #f00946;
-  transition: all 0.2s ease-out;
+  /* background: #fff; */
+  /* color: #333333; */
 }
 
 .btn-link {
@@ -64,39 +52,19 @@
   height: 100%;
   width: 100%;
 }
-/* background-color: #4158D0;
-background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
- */
-.blue {
-  background-color: #4158D0;
-  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #ffb834 100%);
+
+.primary {
+  background-color: #4e65d4;
+  background-image: linear-gradient(43deg, #546adb 0%, #d361cb 46%, #ffb834 100%);
   color: #fff;
   border: none;
   
 }
-.blue:hover {
-  background-color: #5469d4;
-  background-image: linear-gradient(43deg, #586cd1 0%, #dd6dd6 46%, #FFCC70 100%);
-}
-
-
-.red {
-  background-color: #f00946;
-  color: #fff;
-  border: none;
-}
-
-.primary {
-  background-color: #242424;
-  color: #fff;
-  border: none;
-}
-
 .primary:hover {
-  background-color: #fff;
-  color: #242424;
-  border: none;
+  background-color: #4e65d4;
+  background-image: linear-gradient(43deg, #7f8fdd 0%, #dd6dd6 46%, #FFCC70 100%);
 }
+
 
 .green {
   background: #25ce4a;

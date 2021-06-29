@@ -3,9 +3,9 @@ import "./Button.css";
 
 const STYLES = ["btn--primary", "btn--outline"];
 
-const SIZES = ["btn--medium", "btn--large", "btn--mobile", "btn--wide"];
+const SIZES = ["btn--medium", "btn--large"];
 
-const COLOR = ["primary", "blue", "red", "green"];
+const COLOR = ["primary", "green"];
 
 export const Button = ({
     children,

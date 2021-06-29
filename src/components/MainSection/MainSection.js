@@ -52,8 +52,8 @@ export default function MainSection({
                                 </p>
                                 <Link to='/sign-up'>
                                     <Button
-                                        buttonSize='btn--wide'
-                                        buttonColor='blue'
+                                        buttonSize='btn--medium'
+                                        buttonColor='primary'
                                     >
                                         {buttonLabel}
                                     </Button>

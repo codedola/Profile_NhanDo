@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import { FaBars, FaTimes, FaCodeBranch } from "react-icons/fa";
+import { FaBars, FaTimes, FaBookReader } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import MENU_ITEMS from "../../constant/menu.items";
 import NavMenuItem from "./Navbar.Item";
@@ -21,8 +21,7 @@ function Navbar() {
                             className='navbar-logo'
                             onClick={closeMobileMenu}
                         >
-                            <FaCodeBranch className='navbar-icon' />
-                            NhanDo
+                            <FaBookReader className='navbar-icon' />
                         </Link>
                         <div className='menu-icon' onClick={handleClick}>
                             {click ? <FaTimes /> : <FaBars />}

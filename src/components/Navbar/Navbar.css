@@ -52,7 +52,7 @@ background-image: linear-gradient(132deg, #d3b53b 0%, #21a78c 100%);
   justify-content: center;
   list-style: none;
   text-align: center;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .nav-item {
